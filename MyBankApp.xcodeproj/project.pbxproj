@@ -15,6 +15,9 @@
 		CE18ADBB26D555C600E25786 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADBA26D555C600E25786 /* OnboardingPage.swift */; };
 		CE18ADBD26D55D8800E25786 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADBC26D55D8800E25786 /* OnboardingModel.swift */; };
 		CE18ADBF26D5922200E25786 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADBE26D5922200E25786 /* SignUp.swift */; };
+		CE2E81A126D6E53300EFC1D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A026D6E53300EFC1D7 /* Extensions.swift */; };
+		CE2E81A526D7072F00EFC1D7 /* PersonalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A426D7072F00EFC1D7 /* PersonalDetails.swift */; };
+		CE2E81A726D70A4100EFC1D7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A626D70A4100EFC1D7 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		CE18ADBA26D555C600E25786 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		CE18ADBC26D55D8800E25786 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		CE18ADBE26D5922200E25786 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		CE2E81A026D6E53300EFC1D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE2E81A426D7072F00EFC1D7 /* PersonalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails.swift; sourceTree = "<group>"; };
+		CE2E81A626D70A4100EFC1D7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,52 @@
 		CE18ADA526D5433A00E25786 /* MyBankApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE18ADA626D5433A00E25786 /* AppDelegate.swift */,
-				CE18ADA826D5433A00E25786 /* SceneDelegate.swift */,
-				CE18ADAA26D5433A00E25786 /* ViewController.swift */,
+				CE2E819F26D6D4B400EFC1D7 /* Application Delegate */,
 				CE18ADBA26D555C600E25786 /* OnboardingPage.swift */,
 				CE18ADBE26D5922200E25786 /* SignUp.swift */,
+				CE18ADAA26D5433A00E25786 /* ViewController.swift */,
+				CE2E81A426D7072F00EFC1D7 /* PersonalDetails.swift */,
+				CE2E81A626D70A4100EFC1D7 /* Login.swift */,
+				CE2E81AA26D720C100EFC1D7 /* Extensions */,
 				CE18ADBC26D55D8800E25786 /* OnboardingModel.swift */,
-				CE18ADAF26D5433B00E25786 /* Assets.xcassets */,
-				CE18ADB126D5433B00E25786 /* LaunchScreen.storyboard */,
+				CE2E81A926D7208F00EFC1D7 /* Resources */,
+				CE2E81A826D7207200EFC1D7 /* Storyboard */,
 				CE18ADB426D5433B00E25786 /* Info.plist */,
 			);
 			path = MyBankApp;
+			sourceTree = "<group>";
+		};
+		CE2E819F26D6D4B400EFC1D7 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE18ADA626D5433A00E25786 /* AppDelegate.swift */,
+				CE18ADA826D5433A00E25786 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		CE2E81A826D7207200EFC1D7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE18ADB126D5433B00E25786 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CE2E81A926D7208F00EFC1D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE18ADAF26D5433B00E25786 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE2E81AA26D720C100EFC1D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E81A026D6E53300EFC1D7 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +185,13 @@
 			files = (
 				CE18ADAB26D5433A00E25786 /* ViewController.swift in Sources */,
 				CE18ADBF26D5922200E25786 /* SignUp.swift in Sources */,
+				CE2E81A526D7072F00EFC1D7 /* PersonalDetails.swift in Sources */,
 				CE18ADBD26D55D8800E25786 /* OnboardingModel.swift in Sources */,
 				CE18ADA726D5433A00E25786 /* AppDelegate.swift in Sources */,
 				CE18ADA926D5433A00E25786 /* SceneDelegate.swift in Sources */,
+				CE2E81A726D70A4100EFC1D7 /* Login.swift in Sources */,
 				CE18ADBB26D555C600E25786 /* OnboardingPage.swift in Sources */,
+				CE2E81A126D6E53300EFC1D7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let rootViewCOntroller = ViewController()
-        rootViewCOntroller.title = "Skip"
         
         let navigationController = UINavigationController(rootViewController: rootViewCOntroller)
         
