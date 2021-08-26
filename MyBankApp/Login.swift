@@ -148,14 +148,13 @@ class Login: UIViewController {
         setUpNewAccountButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20),
         setUpNewAccountButton.leftAnchor.constraint(equalTo: newToCarbonLabel.rightAnchor, constant: 3),
         //            setUpNewAccountButton.heightAnchor.constraint(equalToConstant: 50)
-        
-        
+      
     ])
 }
 
 @objc func didTapNextButton(_ sender: UIButton) {
     // Move to the next screen
-    let nextViewController = Login()
+    let nextViewController = SignUp()
     navigationController?.pushViewController(nextViewController, animated: true)
 }
 }

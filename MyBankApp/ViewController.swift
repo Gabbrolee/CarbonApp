@@ -72,9 +72,9 @@ import UIKit
     
     
     // use autolayout instead
-    collectionView.anchorToTop(top: view.topAnchor, left: view.leftAnchor,
-                               bottom: view.bottomAnchor, right: view.rightAnchor)
-    collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+      collectionView.anchorToTop(top: logoImageView.bottomAnchor, left: view.leftAnchor,
+                                 bottom: createAccountButton.topAnchor, right: view.rightAnchor)
+
     collectionView.register(OnboardingPage.self, forCellWithReuseIdentifier: cellId)
     }
   
@@ -113,7 +113,7 @@ import UIKit
     
       
      private func doBasicSetup() {
-      view.backgroundColor = .systemPink
+      view.backgroundColor = .white
     }
 
      private func layoutNextScreenButton() {

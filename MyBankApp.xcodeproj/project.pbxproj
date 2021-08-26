@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5DB2ACC217BD2F5721DAA3 /* Pods_MyBankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81A5F30E58296132A717A90 /* Pods_MyBankApp.framework */; };
 		CE18ADA726D5433A00E25786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADA626D5433A00E25786 /* AppDelegate.swift */; };
 		CE18ADA926D5433A00E25786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADA826D5433A00E25786 /* SceneDelegate.swift */; };
 		CE18ADAB26D5433A00E25786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18ADAA26D5433A00E25786 /* ViewController.swift */; };
@@ -18,9 +19,15 @@
 		CE2E81A126D6E53300EFC1D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A026D6E53300EFC1D7 /* Extensions.swift */; };
 		CE2E81A526D7072F00EFC1D7 /* PersonalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A426D7072F00EFC1D7 /* PersonalDetails.swift */; };
 		CE2E81A726D70A4100EFC1D7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E81A626D70A4100EFC1D7 /* Login.swift */; };
+		CE4D374926D7C44B00C752CD /* carbon.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D374826D7C44B00C752CD /* carbon.json */; };
+		CE4D374B26D7C56B00C752CD /* bank.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D374A26D7C56B00C752CD /* bank.json */; };
+		CE4D374D26D7C8CB00C752CD /* carbonPink.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4D374C26D7C8CB00C752CD /* carbonPink.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471B5926AC3124BA76CFEBDA /* Pods-MyBankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBankApp.debug.xcconfig"; path = "Target Support Files/Pods-MyBankApp/Pods-MyBankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9A76FFC3F07426595E1C0BA6 /* Pods-MyBankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBankApp.release.xcconfig"; path = "Target Support Files/Pods-MyBankApp/Pods-MyBankApp.release.xcconfig"; sourceTree = "<group>"; };
+		B81A5F30E58296132A717A90 /* Pods_MyBankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE18ADA326D5433A00E25786 /* MyBankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE18ADA626D5433A00E25786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE18ADA826D5433A00E25786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,9 @@
 		CE2E81A026D6E53300EFC1D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE2E81A426D7072F00EFC1D7 /* PersonalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails.swift; sourceTree = "<group>"; };
 		CE2E81A626D70A4100EFC1D7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		CE4D374826D7C44B00C752CD /* carbon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carbon.json; sourceTree = "<group>"; };
+		CE4D374A26D7C56B00C752CD /* bank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bank.json; sourceTree = "<group>"; };
+		CE4D374C26D7C8CB00C752CD /* carbonPink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carbonPink.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5DB2ACC217BD2F5721DAA3 /* Pods_MyBankApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9978D37DD443197189286090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				471B5926AC3124BA76CFEBDA /* Pods-MyBankApp.debug.xcconfig */,
+				9A76FFC3F07426595E1C0BA6 /* Pods-MyBankApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A849407CC021A9AD3F795CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B81A5F30E58296132A717A90 /* Pods_MyBankApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE18AD9A26D5433A00E25786 = {
 			isa = PBXGroup;
 			children = (
 				CE18ADA526D5433A00E25786 /* MyBankApp */,
 				CE18ADA426D5433A00E25786 /* Products */,
+				9978D37DD443197189286090 /* Pods */,
+				9A849407CC021A9AD3F795CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +105,7 @@
 				CE2E81AA26D720C100EFC1D7 /* Extensions */,
 				CE18ADBC26D55D8800E25786 /* OnboardingModel.swift */,
 				CE2E81A926D7208F00EFC1D7 /* Resources */,
+				CE4D374826D7C44B00C752CD /* carbon.json */,
 				CE2E81A826D7207200EFC1D7 /* Storyboard */,
 				CE18ADB426D5433B00E25786 /* Info.plist */,
 			);
@@ -101,6 +132,8 @@
 		CE2E81A926D7208F00EFC1D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D374A26D7C56B00C752CD /* bank.json */,
+				CE4D374C26D7C8CB00C752CD /* carbonPink.json */,
 				CE18ADAF26D5433B00E25786 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -121,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE18ADB726D5433B00E25786 /* Build configuration list for PBXNativeTarget "MyBankApp" */;
 			buildPhases = (
+				575D2F9A966A2C5D8C2B0A9A /* [CP] Check Pods Manifest.lock */,
 				CE18AD9F26D5433A00E25786 /* Sources */,
 				CE18ADA026D5433A00E25786 /* Frameworks */,
 				CE18ADA126D5433A00E25786 /* Resources */,
+				AF2F0A539C5A29EB789E02BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,12 +206,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4D374926D7C44B00C752CD /* carbon.json in Resources */,
+				CE4D374B26D7C56B00C752CD /* bank.json in Resources */,
 				CE18ADB326D5433B00E25786 /* LaunchScreen.storyboard in Resources */,
+				CE4D374D26D7C8CB00C752CD /* carbonPink.json in Resources */,
 				CE18ADB026D5433B00E25786 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		575D2F9A966A2C5D8C2B0A9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBankApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2F0A539C5A29EB789E02BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBankApp/Pods-MyBankApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBankApp/Pods-MyBankApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBankApp/Pods-MyBankApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE18AD9F26D5433A00E25786 /* Sources */ = {
@@ -327,6 +407,7 @@
 		};
 		CE18ADB826D5433B00E25786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471B5926AC3124BA76CFEBDA /* Pods-MyBankApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +426,7 @@
 		};
 		CE18ADB926D5433B00E25786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A76FFC3F07426595E1C0BA6 /* Pods-MyBankApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
