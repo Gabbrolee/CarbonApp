@@ -9,6 +9,7 @@ import UIKit
 
 class Login: UIViewController {
   
+  var loginViewModel = LoginViewModel()
   let logo: UIImageView = {
       let image = UIImageView(image: UIImage(named: "Carbon"))
       image.translatesAutoresizingMaskIntoConstraints = false
@@ -22,7 +23,7 @@ class Login: UIViewController {
       button.backgroundColor = UIColor(red: 0.29, green: 0.05, blue: 0.76, alpha: 1.00)
       button.setTitleColor(.white, for: .normal)
       button.titleLabel?.font = UIFont(name: "Helvetica", size: 18)
-      //        button.addTarget(self, action: #selector(didTapNextButton), for: .touchUpInside)
+      button.addTarget(self, action: #selector(didTapsignInButton), for: .touchUpInside)
       button.translatesAutoresizingMaskIntoConstraints = false
       return button
   }()
@@ -80,7 +81,7 @@ class Login: UIViewController {
     button.setTitle("Set up new account", for: .normal)
     button.setTitleColor(UIColor(red: 0.29, green: 0.05, blue: 0.76, alpha: 1.00), for: .normal)
       button.titleLabel?.font = UIFont(name: "Helvetica", size: 20)
-      button.addTarget(self, action: #selector(didTapNextButton) , for: .touchUpInside)
+      button.addTarget(self, action: #selector(didTapSignUpButton) , for: .touchUpInside)
       button.translatesAutoresizingMaskIntoConstraints = false
       return button
   }()
@@ -90,6 +91,8 @@ class Login: UIViewController {
       view.backgroundColor = .white
       layoutLogoView()
       layoutSignInButton()
+    loginViewModel.delegate = self
+    
   }
 
   private func layoutLogoView() {
@@ -152,9 +155,12 @@ class Login: UIViewController {
     ])
 }
 
-@objc func didTapNextButton(_ sender: UIButton) {
-    // Move to the next screen
-    let nextViewController = SignUp()
-    navigationController?.pushViewController(nextViewController, animated: true)
+@objc func didTapsignInButton(_ sender: UIButton) {
+  let request = LoginRequest(userEmail: emailTextField.text, userPassword: passwordTextField.text)
+  loginViewModel.loginUser(loginRequest: request)
 }
+  @objc func didTapSignUpButton(_ sender: UIButton) {
+     let nextViewController = SignUp()
+    self.navigationController?.pushViewController(nextViewController, animated: true)
+  }
 }
